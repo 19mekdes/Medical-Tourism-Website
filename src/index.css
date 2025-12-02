@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+/* CSS-First Theme Config (v4 Required for Custom Colors in @apply) */
+@theme {
+  --color-white: #FFFFFF;
+  --color-lightgray: #F5F5F5;
+  --color-primary: #2256CF;
+  --color-accent: #EC4E00;
+  --color-darkblue: #3A4558;
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 transition text-lg;
+  }
+  .btn-accent {
+    @apply bg-accent text-white px-8 py-4 rounded-lg font-semibold hover:bg-orange-600 transition text-lg;
+  }
+}
