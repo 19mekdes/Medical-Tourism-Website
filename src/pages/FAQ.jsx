@@ -1,4 +1,3 @@
-// src/pages/FAQ.jsx
 import { useState } from "react";
 import { ChevronDown, HeartHandshake, Shield, Clock, Globe, Plane, Users, CheckCircle2 } from "lucide-react";
 

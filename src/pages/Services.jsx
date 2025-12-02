@@ -1,4 +1,3 @@
-// src/pages/Services.jsx
 import { 
   Stethoscope, 
   HeartPulse, 
@@ -81,7 +80,7 @@ export default function Services() {
                        animate-fade-up"
               style={{ animationDelay: `${index * 150}ms` }}
             >
-              {/* Image */}
+              
               <div className="relative overflow-hidden h-64 lg:h-72">
                 <img
                   src={service.img}
@@ -117,7 +116,7 @@ export default function Services() {
                 </a>
               </div>
 
-              {/* Hover Glow Effect */}
+              
               <div className="absolute inset-0 pointer-events-none 
                             border-4 border-transparent group-hover:border-[#EC4E00]/30 
                             rounded-3xl transition-all duration-700" />

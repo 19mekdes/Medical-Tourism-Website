@@ -1,7 +1,6 @@
-// src/components/Navbar.jsx
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X } from "lucide-react"; // npm install lucide-react
+import { Menu, X } from "lucide-react"; 
 
 const navItems = ["Home", "About Us", "Services", "Destinations", "Pricing", "FAQ", "Contacts"];
 
@@ -70,7 +69,7 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Sidebar (Slide-In) */}
+      
       <div
         className={`fixed top-0 right-0 h-full w-3/4 sm:w-1/2 max-w-sm bg-white/95 backdrop-blur-xl shadow-2xl
                    transition-transform duration-500 ease-in-out lg:hidden z-50

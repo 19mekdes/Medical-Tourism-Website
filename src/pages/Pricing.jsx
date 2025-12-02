@@ -1,4 +1,3 @@
-// src/pages/Pricing.jsx
 import { Check, X, Star, HeartHandshake, Shield, Plane, Send } from "lucide-react";
 
 const packages = [
@@ -70,7 +69,7 @@ export default function Pricing() {
         {/* Pricing Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-12">
 
-          {packages.map((pkg, index) => (
+          {packages.map((pkg) => (
             <div
               key={pkg.name}
               className={`relative group bg-white rounded-3xl shadow-xl hover:shadow-3xl 

@@ -1,4 +1,4 @@
-// src/pages/Home.jsx
+
 import Hero from "../components/Hero";
 import { Stethoscope, HeartPulse, Palmtree, ChevronRight } from "lucide-react";
 

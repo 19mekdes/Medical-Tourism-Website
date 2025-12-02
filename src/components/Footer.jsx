@@ -1,4 +1,4 @@
-// src/components/Footer.jsx
+
 import { Facebook, Instagram, Mail, Phone, MapPin, Globe, HeartHandshake } from "lucide-react";
 
 export default function Footer() {
@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
 
-          {/* Brand & Tagline */}
+          
           <div className="space-y-5">
             <div className="flex items-center space-x-3">
               <h2 className="text-3xl font-extrabold text-[#2256CF]">
@@ -23,7 +23,7 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Quick Links */}
+          
           <div>
             <h3 className="text-xl font-bold mb-6 text-[#EC4E00]">Quick Links</h3>
             <ul className="space-y-3">
@@ -41,7 +41,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Contact Info */}
+          
           <div>
             <h3 className="text-xl font-bold mb-6 text-[#EC4E00]">Contact Us</h3>
             <div className="space-y-4 text-sm md:text-base">
@@ -64,7 +64,7 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Social Media */}
+          
           <div>
             <h3 className="text-xl font-bold mb-6 text-[#EC4E00]">Follow Us</h3>
             <div className="flex gap-4">
@@ -111,7 +111,7 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Bottom Bar */}
+        
         <div className="border-t border-white/20 mt-12 pt-8 text-center">
           <p className="text-sm opacity-70">
             © 2025 MediTour Medical Tourism. All rights reserved. | 

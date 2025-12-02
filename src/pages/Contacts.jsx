@@ -1,4 +1,3 @@
-// src/pages/Contacts.jsx
 import { useState } from "react";
 import { Mail, Phone, MapPin, Send, Clock, Globe } from "lucide-react";
 
@@ -16,32 +15,30 @@ export default function Contacts() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Here you can add API call to send form data (e.g., to EmailJS or your backend)
+
     console.log("Form submitted:", formData);
-    alert("Thank you for your message! Our team will contact you within 24 hours.");
+    alert(
+      "Thank you for your message! Our team will contact you within 24 hours."
+    );
     setFormData({ name: "", email: "", phone: "", message: "" });
   };
 
   return (
     <section className="py-16 md:py-24 lg:py-32 bg-[#F5F5F5]">
       <div className="container mx-auto px-6 md:px-8 lg:px-12 max-w-7xl">
-
         {/* Heading */}
         <div className="text-center mb-12 md:mb-20">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#3A4558] mb-6 leading-tight">
             Get in Touch with <span className="text-[#2256CF]">MediTour</span>
           </h1>
           <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
-            Ready to start your medical journey? Contact us for a free consultation, available 24/7 in your language.
+            Ready to start your medical journey? Contact us for a free
+            consultation, available 24/7 in your language.
           </p>
         </div>
 
-        {/* Main Grid */}
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 xl:gap-20 items-start">
-
-          {/* Left: Image & Contact Info */}
           <div className="space-y-8">
-            {/* Large Image */}
             <div className="relative group overflow-hidden rounded-3xl shadow-2xl">
               <img
                 src="/images/contact-clinic.jpg"
@@ -54,9 +51,10 @@ export default function Contacts() {
               </p>
             </div>
 
-            {/* Contact Info */}
             <div className="bg-white rounded-3xl p-8 shadow-lg space-y-6">
-              <h3 className="text-2xl font-bold text-[#2256CF] mb-4">Contact Details</h3>
+              <h3 className="text-2xl font-bold text-[#2256CF] mb-4">
+                Contact Details
+              </h3>
               <div className="flex items-center gap-4 text-gray-700 hover:text-[#2256CF] transition-colors">
                 <Phone size={24} className="text-[#EC4E00]" />
                 <span>+1 (555) 123-4567 (US) | +90 212 555 1234 (Turkey)</span>
@@ -80,14 +78,16 @@ export default function Contacts() {
             </div>
           </div>
 
-          {/* Right: Contact Form */}
           <div className="bg-white rounded-3xl p-8 md:p-10 lg:p-12 shadow-2xl">
             <h2 className="text-3xl md:text-4xl font-bold text-[#2256CF] mb-8">
               Request Your Free Consultation
             </h2>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
+                <label
+                  htmlFor="name"
+                  className="block text-sm font-medium text-gray-700 mb-2"
+                >
                   Full Name
                 </label>
                 <input
@@ -102,7 +102,10 @@ export default function Contacts() {
                 />
               </div>
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+                <label
+                  htmlFor="email"
+                  className="block text-sm font-medium text-gray-700 mb-2"
+                >
                   Email Address
                 </label>
                 <input
@@ -117,7 +120,10 @@ export default function Contacts() {
                 />
               </div>
               <div>
-                <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
+                <label
+                  htmlFor="phone"
+                  className="block text-sm font-medium text-gray-700 mb-2"
+                >
                   Phone Number
                 </label>
                 <input
@@ -131,7 +137,10 @@ export default function Contacts() {
                 />
               </div>
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
+                <label
+                  htmlFor="message"
+                  className="block text-sm font-medium text-gray-700 mb-2"
+                >
                   Your Message
                 </label>
                 <textarea
@@ -159,10 +168,12 @@ export default function Contacts() {
         {/* Trust Bar */}
         <div className="mt-16 md:mt-24 text-center">
           <p className="text-2xl md:text-3xl font-bold text-[#3A4558]">
-            Trusted by patients from <span className="text-[#EC4E00]">80+ countries</span>
+            Trusted by patients from{" "}
+            <span className="text-[#EC4E00]">80+ countries</span>
           </p>
           <p className="mt-4 text-lg text-gray-600">
-            JCI-accredited hospitals • Full insurance support • Transparent pricing
+            JCI-accredited hospitals • Full insurance support • Transparent
+            pricing
           </p>
         </div>
       </div>
